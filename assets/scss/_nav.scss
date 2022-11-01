@@ -7,6 +7,12 @@
   align-items: center;
   gap: 30px;
 
+  .hamburger {
+    display: none;
+    flex-grow: 1;
+    z-index: 12;
+  }
+
   .nav-logo {
     flex-grow: 1;
   }
@@ -58,6 +64,7 @@
 
   .nav-busket {
     display: inline-flex;
+    gap: 20px;
     align-items: center;
     justify-content: end;
     flex-grow: 1;
@@ -68,6 +75,20 @@
     background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
     border-radius: 10px;
     padding: 14px;
+
+    &-count {
+      padding: 5px 8px;
+      border-radius: 50%;
+      background: #fff;
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: #403C3B;
+    }
+
+    .busket-count-wrap {
+      border-left: 1px solid #fff;
+      padding-left: 12px;
+    }
   }
 
   .nav-mobile {
@@ -76,8 +97,99 @@
     left: 0;
     width: 80vw;
     height: 100vh;
+    padding: 70px 10px;
+    z-index: 11;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .nav-link {
+      font-weight: 600;
+      font-size: 1.875rem;
+      color: #fff;
+
+    }    
     background: #333;
     transform: translateX(-100%);
     transition: .3s;
+
+    &.is-active {
+      transform: translateX(0);
+    }
+
+    .nav-contact {
+      display: flex;
+      align-items: center;
+      max-width: 140px;
+      text-align: left;
+      
+      flex-wrap: wrap;
+      flex-grow: 1;
+  
+      &-subtitle {
+        font-weight: 400;
+        color: #CFCFCF;
+        font-size: 0.75rem;
+      }
+  
+      &-title {
+        font-weight: 700;
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(#000, 0.5);
+  transition: .3s;
+  z-index: 10;
+
+  
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@include _768px {
+  .container-nav {
+    flex-wrap: wrap;
+
+    .hamburger {
+      display: inline-flex !important;
+      order: 0;
+      flex-grow: 1;
+    }
+
+    .nav-logo {
+      order: 2;
+      flex-grow: 3;
+      justify-content: center;
+    }
+
+    .nav-busket-wrap {
+      order: 3;
+      flex-grow: 1;
+    }
+
+    .nav-search {
+      flex-basis: 100%;
+      order: 4;
+    }
+
+    .nav-contact {
+      display: none;
+    }
   }
 }

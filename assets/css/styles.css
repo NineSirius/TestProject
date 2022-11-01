@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  gap: 20px;
   overflow-x: auto;
 }
 
@@ -12,7 +13,7 @@
   align-items: center;
   background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
   color: white;
-  overflow: hidden;
+  cursor: pointer;
   padding: 20px 15px;
   gap: 20px;
 }
@@ -83,6 +84,56 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.icon-moon {
+  height: 44px;
+  width: 62px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+  border-radius: 10px;
+  border: none;
+  display: none;
+}
+
+.main__block:hover .icon-moon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px 0px rgba(114, 163, 121, 0.6980392157);
+}
+.main__block:hover .cont {
+  display: none;
+}
+.main__block:hover .box {
+  box-shadow: none;
+}
+.main__block:hover .position {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: #79b282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__block {
+  position: relative;
+}
+
+.position__span {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.position {
+  display: none;
 }
 
 @font-face {

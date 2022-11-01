@@ -2,6 +2,21 @@
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+}
+
+.main__h1 {
+  background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+  color: white;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .main__block {
@@ -93,6 +108,8 @@
   border-radius: 10px;
   border: none;
   display: none;
+  transition-duration: 3s;
+  transform: translateX(300%);
 }
 
 .main__block:hover .icon-moon {
@@ -100,6 +117,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0px 5px 10px 0px rgba(114, 163, 121, 0.6980392157);
+  transform: translateX(0);
 }
 .main__block:hover .cont {
   display: none;

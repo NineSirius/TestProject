@@ -197,11 +197,21 @@ a {
   .container-nav .nav-logo {
     order: 2;
     flex-grow: 3;
-    justify-content: center;
+    text-align: center;
   }
   .container-nav .nav-busket-wrap {
     order: 3;
     flex-grow: 1;
+  }
+  .container-nav .nav-busket-wrap .nav-busket {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .container-nav .nav-busket-wrap .nav-busket .busket-count-wrap {
+    border-left: unset;
+    border-top: 1px solid #fff;
+    padding-left: 0;
+    padding-top: 7px;
   }
   .container-nav .nav-search {
     flex-basis: 100%;

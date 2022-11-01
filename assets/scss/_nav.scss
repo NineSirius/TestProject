@@ -175,12 +175,24 @@
     .nav-logo {
       order: 2;
       flex-grow: 3;
-      justify-content: center;
+      text-align: center;
     }
 
     .nav-busket-wrap {
       order: 3;
       flex-grow: 1;
+
+      .nav-busket {
+        flex-direction: column;
+        gap: 1px;
+
+        .busket-count-wrap {
+          border-left: unset;
+          border-top: 1px solid #fff;
+          padding-left: 0;
+          padding-top: 7px;
+        }
+      }
     }
 
     .nav-search {

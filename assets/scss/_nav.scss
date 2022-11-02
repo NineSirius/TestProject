@@ -1,6 +1,7 @@
-.header {
+.navbar {
   background: #403C3B;
-}
+  box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
+} 
 
 .container-nav {
   display: flex;
@@ -210,4 +211,34 @@
   }
 }
 
+
+.header-image {
+  background: linear-gradient(90deg, #211F20 0%, rgba(68, 64, 63, 0) 100%), linear-gradient(90deg, #292728 30%, rgba(68, 64, 63, 0) 100%), url(../img/header-image.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    .header-image-wrap {
+      max-width: 650px;
+      text-align: center;
+
+      .header-image-info-1item {
+        width: 100%;
+      }
+  
+      .header-image-info-2item {
+        max-width: 244.36px;
+      }
+
+      @include _768px {
+        width: 100%;
+      }
+    }
+
+    
+  }
+}
 

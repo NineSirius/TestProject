@@ -87,6 +87,23 @@
   }
 }
 
+.banner {
+  background: linear-gradient(),  url(../img/banner-bg.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 70px;
+
+  display: flex;
+  gap: 160px;
+
+  &-info {
+    width: 50%;
+  }
+
+  &-block {
+    width: 50%;
+  }
+}
 
 
 

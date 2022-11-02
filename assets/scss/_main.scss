@@ -1,6 +1,4 @@
-.main {
-  background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
-}
+
 .text {
   display: flex;
   gap: 20px;
@@ -8,9 +6,7 @@
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 30px;
-  @include _768px {
-    overflow-x: auto;
-  }
+  overflow-x: auto;
 }
 .text__span {
   color: #cfcfcf;

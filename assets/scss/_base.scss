@@ -67,8 +67,21 @@ h1, h2, h3, h4, h5 ,h6 {
   color: #FFF;
 }
 
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  color: #CFCFCF;
+}
+
 .container {
   max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.container-1440 {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 15px;
 }

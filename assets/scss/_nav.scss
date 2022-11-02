@@ -120,22 +120,20 @@
     
     }
 
-    .nav-contact {
+    .nav-mobile-contact {
       display: flex;
-      align-items: center;
-      max-width: 140px;
-      text-align: left;
       
       flex-wrap: wrap;
       flex-grow: 1;
+      gap: 20px;
   
-      &-subtitle {
+      .nav-mobile-subtitle {
         font-weight: 400;
         color: #CFCFCF;
         font-size: 0.75rem;
       }
   
-      &-title {
+      .nav-mobile-title {
         font-weight: 700;
         color: #fff;
         font-size: 1rem;

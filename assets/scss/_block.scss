@@ -1,7 +1,7 @@
 .main {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
+  flex-direction: column;
   background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
 }
 .main__h1 {
@@ -16,6 +16,18 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.main-1 {
+  display: flex;
+  overflow-x: auto;
+}
+.main-2 {
+  display: flex;
+  overflow-y: auto;
+}
+.main-3 {
+  display: flex;
+  overflow-x: auto;
 }
 .main__block {
   min-height: 385px;

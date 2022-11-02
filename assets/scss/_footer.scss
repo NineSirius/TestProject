@@ -4,6 +4,13 @@
   width: 100%;
   height: 195px;
 
+    @include _992px{
+      height: 229px;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+
   &__up {
     width: 64px;
     height: 64px;
@@ -13,6 +20,12 @@
     text-align: center;
     margin-top: 51px;
     margin-left: 40px;
+
+       @include _992px{
+        position: absolute  ;
+        top: 3px;
+        left: 4px;
+       }
   }
 
   &__title {
@@ -22,6 +35,12 @@
     height: 64px;
     margin-top: 26px;
     margin-left: 55px;
+        
+      @include _992px{
+        max-width: 100%;
+        height:100% ;
+        text-align: center;
+    }
   }
 
   &__blocker {
@@ -42,6 +61,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
     margin-bottom: 7px;
+    max-width: 100%;
   }
   &__main {
     display: flex;
@@ -52,13 +72,16 @@
     line-height: 24px;
     color: #ffffff;
     gap: 2.625rem;
+      @include _992px{
+        display: none;
+
+    }
     &_link {
       color: #ffffff;
     }
   }
 }
-.fll{
-  width: 87px;
-}
+
+
 
 

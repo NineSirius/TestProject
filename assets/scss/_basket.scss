@@ -1,6 +1,7 @@
 .basket__main {
   padding-left: 320px;
   padding-top: 35px;
+  border-bottom:#615f5e;
 
   &__link {
     font-weight: 700;
@@ -119,10 +120,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border-right: 1px solid #615f5e;
     
     &_img {
-      width: 100%;
       border-radius: 10px;
     }
     &_h1 {
@@ -144,6 +143,14 @@
       color: #ffffff;
     }
   }
+}
+.line{
+
+width:100px;
+max-height:100%;
+border: #615f5e solid 1px;
+border-radius:5px;
+
 }
 .basket__end {
   border-top: 1px solid rgba(255, 255, 255, 0.1);

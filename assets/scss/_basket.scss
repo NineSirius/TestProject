@@ -1,0 +1,207 @@
+.basket__main {
+  padding-left: 320px;
+  padding-top: 35px;
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+  }
+  &__title {
+    border-left: 4px solid #618967;
+    padding-left: 20px;
+    margin-top: 20px;
+
+    &_h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      text-transform: uppercase;
+      color: #ffffff;
+      @include _992px {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &_span {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: lowercase;
+      color: #72a479;
+      @include _992px {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.basket__select-menu {
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+  border-radius: 10px;
+  margin: 75px 172px 40px 172px;
+  &__first {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #615f5e;
+  }
+  &__second {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+  }
+  &_img {
+    border-radius: 10px;
+  }
+  &_title {
+    text-align: start;
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+    &_h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: white;
+    }
+    &_p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #a6a7ab;
+    }
+  }
+  &__selecting {
+    padding-left: 215px;
+
+    &_two {
+      padding-left: 130px;
+    }
+  }
+  &__icon {
+    padding: 10px;
+    background: #72a479;
+    border-radius: 10px;
+    padding: 12.5px;
+  }
+  &__number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}
+.bsmi {
+  margin-left: 58px;
+}
+
+.basket__order__main {
+  &__title {
+    margin-left: 172px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
+.basket__order__conteiner {
+  margin: 30px 172px;
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 31px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid #615f5e;
+    padding-right: 30px;
+    margin-left: 60px;
+    &_second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    &_img {
+      width: 100%;
+      height: 123px;
+      border-radius: 10px;
+    }
+    &_h1 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+    }
+    &_add {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #c6ced1;
+    }
+    &_h2 {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+  }
+}
+.basket__end {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  &__conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin: 49px 340px 90px 340px;
+    background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+    border-radius: 10px;
+    padding: 20px 27px 20px 38px;
+    &__btn {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+      border-radius: 10px;
+      padding: 17px 50px;
+      border: none;
+    }
+
+    &__title {
+      &_h1 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 21px;
+        color: #a6a7ab;
+      }
+      &_num {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+      }
+      &_h2 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+      }
+      &_num2 {
+        color: #72a479;
+      }
+      &_h3 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: white;
+      }
+    }
+  }
+}

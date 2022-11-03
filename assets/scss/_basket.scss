@@ -95,7 +95,7 @@
   margin-left: 58px;
 }
 .border__none {
-  border: 0;
+  border: none;
 }
 .basket__order__main {
   &__title {
@@ -106,12 +106,13 @@
   }
 }
 .basket__order__conteiner {
-  margin: 30px 172px;
+  
   background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
   border-radius: 10px;
-  padding: 20px;
   display: flex;
-  gap: 31px;
+  gap: 60px;
+  justify-content: center;
+  padding: 20px 35px 13px 35px;
 
   &__block {
     display: flex;
@@ -119,17 +120,9 @@
     align-items: center;
     gap: 10px;
     border-right: 1px solid #615f5e;
-    padding-right: 30px;
-    margin-left: 60px;
-    &_second {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+    
     &_img {
       width: 100%;
-      height: 123px;
       border-radius: 10px;
     }
     &_h1 {

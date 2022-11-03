@@ -24,6 +24,16 @@
     overflow: hidden;
     flex-grow: 2.5;
 
+    .nav-search-wrap {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      .nav-search-icon {
+        font-size: 20px;
+        color: #FFF;
+      }
+    }
 
     &-input {
       width: 100%;
@@ -32,12 +42,16 @@
       color: #CFCFCF;
       border: none;
       outline: none;
-
+      
       &::placeholder {
         font-weight: 400;
         font-size: 1.125rem;
         color: #CFCFCF;
+        
       }
+
+
+    
     }
   }
 

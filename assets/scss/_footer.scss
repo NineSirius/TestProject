@@ -20,11 +20,16 @@
     width: 64px;
     height: 64px;
     background-color: white;
-    color: #9b7d8c;
     border-radius: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 51px;
     margin-left: 40px;
+
+      & a {
+        color: #222021;
+      }
 
        @include _992px{
         position: absolute  ;
@@ -210,7 +215,17 @@
   .contact-flex {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: space-between;
+
+    .contact-number {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  }
+
+  .contact-number-title {
+    font-size: 23px;
   }
 
   .contact-btn {
@@ -224,12 +239,42 @@
 
   }
 
-  .contact-social {
-    margin-top: 30px;
-    max-width: 250px;
-    margin: 0 auto;
+  .contact-item {
+    margin-top: 20px;
     display: flex;
+    gap: 15px;
+
+    .contact-icon {
+      display: flex;
+      font-size: 1.75rem;
+      color: #6D9C74;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+
+  .contact-social {
+    max-width: 270px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
     gap: 25px;
+
+    .social-web {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+
+      .social-link {
+        color: #FFF;
+      }
+    }
   }
 }
 

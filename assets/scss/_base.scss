@@ -53,41 +53,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cook:before {
+.icon-bag:before {
   content: "\e900";
-  color: #fff;
 }
 .icon-arrow-up:before {
   content: "\e901";
 }
 .icon-facebook:before {
   content: "\e902";
-  color: #fff;
 }
 .icon-vk:before {
-  content: "\e904";
-  color: #fff;
-}
-.icon-lightning:before {
-  content: "\e905";
-  color: #79b282;
-}
-.icon-onion:before {
-  content: "\e906";
-  color: #fff;
+  content: "\e903";
 }
 .icon-youtube:before {
-  content: "\e907";
-  color: #fff;
+  content: "\e904";
 }
-.icon-file:before {
-  content: "\e908";
-  color: #fff;
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-minus:before {
+  content: "\ea0b";
 }
 .icon-plus:before {
-  content: "\e909";
-  color: #fff;
+  content: "\ea0a";
 }
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-envelope:before {
+  content: "\e906";
+}
+
 
 
 *,

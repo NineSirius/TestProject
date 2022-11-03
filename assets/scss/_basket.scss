@@ -1,6 +1,7 @@
 .basket__main {
   padding-left: 320px;
   padding-top: 35px;
+  border-bottom:#615f5e;
 
   &__link {
     font-weight: 700;
@@ -41,27 +42,26 @@
 .basket__select-menu {
   background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
   border-radius: 10px;
+  padding: 0;
+
+  &_block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
   &__first {
     display: flex;
-    justify-content: start;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #615f5e;
   }
-  &__second {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 20px;
-  }
+
   &_img {
     border-radius: 10px;
   }
   &_title {
-    text-align: start;
-    width: 100%;
-    height: 50px;
-    padding-left: 40px;
     &_h1 {
       font-weight: 700;
       font-size: 18px;
@@ -76,17 +76,14 @@
     }
   }
   &__selecting {
-    padding-left: 215px;
-
-    &_two {
-      padding-left: 130px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 130px;
   }
   &__icon {
-    padding: 10px;
+    padding: 5px;
     background: #72a479;
     border-radius: 10px;
-    padding: 12.5px;
   }
   &__number {
     font-weight: 700;
@@ -98,10 +95,11 @@
 .bsmi {
   margin-left: 58px;
 }
-
+.border__none {
+  border: none;
+}
 .basket__order__main {
   &__title {
-    margin-left: 172px;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
@@ -109,29 +107,21 @@
   }
 }
 .basket__order__conteiner {
+  
   background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
   border-radius: 10px;
-  padding: 20px;
   display: flex;
-  gap: 31px;
+  gap: 60px;
+  justify-content: center;
+  padding: 20px 35px 13px 35px;
 
   &__block {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border-right: 1px solid #615f5e;
-    padding-right: 30px;
-    margin-left: 60px;
-    &_second {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+    
     &_img {
-      width: 100%;
-      height: 123px;
       border-radius: 10px;
     }
     &_h1 {
@@ -153,6 +143,14 @@
       color: #ffffff;
     }
   }
+}
+.line{
+
+width:100px;
+max-height:100%;
+border: #615f5e solid 1px;
+border-radius:5px;
+
 }
 .basket__end {
   border-top: 1px solid rgba(255, 255, 255, 0.1);

@@ -211,6 +211,10 @@
   }
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 
 .header-image {
   background: linear-gradient(90deg, #211F20 0%, rgba(68, 64, 63, 0) 100%), linear-gradient(90deg, #292728 30%, rgba(68, 64, 63, 0) 100%), url(../img/header-image.jpg)no-repeat;

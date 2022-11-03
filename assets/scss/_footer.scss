@@ -169,6 +169,7 @@
   }
 
   @include _500px {
+    display: none;
     padding: 10px;
   }
 }

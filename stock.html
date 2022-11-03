@@ -8,47 +8,89 @@
   <title>Teamwork</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container container-nav">
-      <button class="hamburger hamburger--3dxy">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
 
-      <a href="#" class="logo nav-logo">LOGOS</a> 
-
-      <div class="nav-search">
-        <label class="nav-search-wrap">
-          <input type="text" placeholder="Введите адресс доставки" class="nav-search-input">
-        </label>
-      </div>
+  <div class="modal-busket">
+    <div class="modal-item">
+      <h2 class="modal-title">Корзина</h2>
       
-      <div class="nav-contact">
-        <span class="nav-contact-subtitle">Контакты:</span>
-        <span class="nav-contact-title">+7 (917) 510-57-59</span>
-      </div>
-
-      <div class="nav-busket-wrap">
-        <a href="#" class="nav-busket">
-          Корзина
-          <div class="busket-count-wrap">
-            <span class="nav-busket-count">4</span>
+      <div class="busket-items">
+        <div class="busket-card">
+          <div class="busket-image">
+            <img src="assets/img/card-item1.jpg" alt="img">
           </div>
-        </a>
-      </div>
-    
-      <nav class="nav-mobile">
-        <a href="#" class="nav-link">Главная</a>
-        <a href="#" class="nav-link">Карточка товара</a>
-        <a href="#" class="nav-link">Корзина</a>
-        <a href="#" class="nav-link">Доставка</a>
-        <a href="#" class="nav-link">Акции</a>
-        <div class="nav-mobile-contact">
-          <span class="nav-mobile-subtitle">Контакты:</span>
-          <a class="nav-mobile-title" href="tel:+7 (917) 510-57-59">+7 (917) 510-57-59</a>
+  
+          <div class="busket-info">
+            <h2 class="busket-title">Гусь</h2>
+            <p class="busket-desc">Фаршированный гречневой кашей, 
+              курагой, апельсином и зеленым яблоком</p>
+  
+            <div class="busket-btns">
+              <button class="busket-btn">-</button>
+            </div>
+          </div>
         </div>
-      </nav>      
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="navbar">
+      <div class="container container-nav">
+        <button class="hamburger hamburger--3dxy">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+  
+        <a href="index.html" class="logo nav-logo">LOGOS</a> 
+  
+        <div class="nav-search">
+          <label class="nav-search-wrap">
+            <input type="text" placeholder="Введите адресс доставки" class="nav-search-input">
+          </label>
+        </div>
+        
+        <div class="nav-contact">
+          <span class="nav-contact-subtitle">Контакты:</span>
+          <span class="nav-contact-title">+7 (917) 510-57-59</span>
+        </div>
+  
+        <div class="nav-busket-wrap">
+          <a href="#" class="nav-busket">
+            Корзина
+            <div class="busket-count-wrap">
+              <span class="nav-busket-count">4</span>
+            </div>
+          </a>
+        </div>
+  
+      
+        <nav class="nav-mobile">
+          <a href="index.html" class="nav-link">Главная</a>
+          <a href="#" class="nav-link">Карточка товара</a>
+          <a href="#" class="nav-link">Корзина</a>
+          <a href="contact.html" class="nav-link">Доставка</a>
+          <a href="#" class="nav-link">Акции</a>
+          <div class="nav-mobile-contact">
+            <span class="nav-mobile-subtitle">Контакты:</span>
+            <a class="nav-mobile-title" href="tel:+7 (917) 510-57-59">+7 (917) 510-57-59</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+  
+      <div class="text">
+        <a href="#item1" class="text__span">Холодные закуски</a>
+        <a href="#item2" class="text__span">Горячие закуски</a>
+        <a href="#item3" class="text__span">Мясные блюда</a>
+        <a href="#" class="text__span">Супы</a>
+        <a href="#" class="text__span">Рыбные блюда</a>
+        <a href="#" class="text__span">Гриль меню</a>
+        <a href="#" class="text__span">Фирменные блюда</a>
+        <a href="#" class="text__span">Напитки</a>
+      </div>
     </div>
   </header>
   <!--  -->
@@ -66,7 +108,7 @@
   
   <!--  -->
   
-  <main class="main">
+  <main class="main container">
     <div class="stock">
         <div class="stock__card first-line">
             <div class="stock__card_first">
@@ -208,11 +250,39 @@
   </main>
 
 
-  <!--  -->
-
-  <!-- contacts -->
-
-  <!--  -->
+  <div class="about">
+    <div class="contact container">
+      <div class="contact-card">
+        <h2 class="contact-main-title">Контакты</h2>
+        <hr>
+        <div class="contact-item">
+          <span class="contact-subtitle">Наш адресс:</span>
+          <h2 class="contact-title">МО, городской округ Красногорск, село Ильинкое, 
+            Экспериментальная улица, 10</h2>
+        </div>
+        <div class="contact-item">
+          <span class="contact-subtitle">Наша почта</span>
+          <h2 class="contact-title"><a href="mailto:auto.wash@gmail.comv" class="contact-link">auto.wash@gmail.com</a></h2>
+        </div>
+        <hr>
+        <div class="contact-flex">
+          <a href="#" class="contact-btn">Забронировать стол</a>
+          <div class="contact-number">
+            <h2 class="contact-title">+7 (917) 510-57-59</h2>
+            <span class="contact-subtitle">Звоните или оставляйте заявку</span>
+          </div>
+        </div>
+        <div class="contact-social">
+          <h3>Мы в соцсетях</h3>
+          <div class="social-web">
+            <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+            <a href="#" class="social-link"><i class="icon-vk"></i></a>
+            <a href="#" class="social-link"><i class="icon-youtube"></i></a>
+            <a href="#" class="social-link"><i class="icon-file"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <footer class="foot">

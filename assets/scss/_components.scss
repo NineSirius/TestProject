@@ -48,13 +48,17 @@
 
       .busket-info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
 
-        .busket-title {
-          font-weight: 700;
-          font-size: 2rem;
+        .busket-title-wrap {
+          .busket-title {
+            font-weight: 700;
+            font-size: 2rem;
+          }
         }
+
+        
 
         .busket-btn {
           display: inline-flex;

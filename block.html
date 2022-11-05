@@ -67,10 +67,10 @@
       
         <nav class="nav-mobile">
           <a href="index.html" class="nav-link">Главная</a>
-          <a href="#" class="nav-link">Карточка товара</a>
-          <a href="#" class="nav-link">Корзина</a>
+          <a href="block.html" class="nav-link">Карточка товара</a>
+          <a href="basket.html" class="nav-link">Корзина</a>
           <a href="contact.html" class="nav-link">Доставка</a>
-          <a href="#" class="nav-link">Акции</a>
+          <a href="stock.html" class="nav-link">Акции</a>
           <div class="nav-mobile-contact">
             <span class="nav-mobile-subtitle">Контакты:</span>
             <a class="nav-mobile-title" href="tel:+7 (917) 510-57-59">+7 (917) 510-57-59</a>
@@ -94,16 +94,6 @@
   </header>
 
     <main class="main container">
-      <div class="text">
-        <span class="text__span">Холодные закуски</span>
-        <span class="text__span">Горячие закуски</span>
-        <span class="text__span">Мясные блюда</span>
-        <span class="text__span">Супы</span>
-        <span class="text__span">Рыбные блюда</span>
-        <span class="text__span">Гриль меню</span>
-        <span class="text__span">Фирменные блюда</span>
-        <span class="text__span">Напитки</span>
-      </div>
       <div class="main-card-come-back">
         <div class="main-card-come-back-img-wrap">
           <img
@@ -309,18 +299,34 @@
           <span class="foot__blocker">© ООО СК «АПШЕРОН» <br>
             Все права защищены. 2010-2020</span>
             <a class="foot__link" href="#">Пользовательское соглашение</a>
-            <a class="foot__link fll" href="#">Карта сайта</a>
+            <a class="foot__link fll sitemap-btn" href="#sitemap">Карта сайта</a>
             <a class="foot__link" href="#">Политика конфиденциальности</a>
         </div>
         
         <div class="foot__main">
           <a class="foot__main_link" href="#">О ресторане</a>
-          <a class="foot__main_link" href="#">Условия доставки</a>
+          <a class="foot__main_link" href="contact.html">Условия доставки</a>
           <a class="foot__main_link" href="#">Возврат товара</a>
-          <a class="foot__main_link" href="#">Акции</a>    
+          <a class="foot__main_link" href="stock.html">Акции</a>    
         </div>
       </div>
     </footer>
+  
+    <div class="sitemap-wrap" id="sitemap">
+      <div class="sitemap">
+        <div class="sitemap-title-wrap">
+          <h2 class="sitemap-title">Карта сайта</h2>
+        </div>
+    
+        <div class="sitemap-info">
+          <a href="index.html" class="sitemap-link">Главная</a>
+          <a href="block.html" class="sitemap-link active">Карточка товара</a>
+          <a href="basket.html" class="sitemap-link">Корзина</a>
+          <a href="contact.html" class="sitemap-link">Условия доставки</a>
+          <a href="stock.html" class="sitemap-link">Акции</a>
+        </div>
+      </div>
+    </div>
 
     <div class="overlay"></div>
     <script src="assets/js/script.js"></script>

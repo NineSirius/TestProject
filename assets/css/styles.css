@@ -1567,6 +1567,16 @@ p {
   border-radius: 15px;
   padding: 20px;
 }
+.modal-busket .modal-item .modal-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-busket .modal-item .modal-link {
+  font-weight: 600;
+  font-size: 1;
+  color: #fff;
+}
 .modal-busket .modal-item .modal-title {
   font-size: 2.5rem;
   margin: 10px 0 25px;
@@ -1620,6 +1630,47 @@ p {
 
 .black {
   background: #000 !important;
+}
+
+.sitemap-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(500%);
+  transition: 0.2s;
+  background: rgba(0, 0, 0, 0.5);
+}
+.sitemap-wrap.is-active {
+  transform: translateY(0);
+}
+.sitemap-wrap .sitemap {
+  background: #2E2B2C;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sitemap-wrap .sitemap-title-wrap {
+  text-align: center;
+}
+.sitemap-wrap .sitemap-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sitemap-wrap .sitemap-info .sitemap-link {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+.sitemap-wrap .sitemap-info .sitemap-link.active {
+  color: #72A479;
 }
 
 /*# sourceMappingURL=styles.css.map */

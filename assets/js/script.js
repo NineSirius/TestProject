@@ -5,6 +5,9 @@ let overlay = document.querySelector('.overlay');
 let busketBtn = document.querySelector('.nav-busket');
 let busketItem = document.querySelector('.modal-busket');
 
+let sitemapBtn = document.querySelector('.sitemap-btn');
+let sitemapBox = document.querySelector('.sitemap-wrap');
+
 
 hamburger.addEventListener('click', function(){
   hamburger.classList.toggle('is-active');
@@ -32,4 +35,11 @@ busketItem.addEventListener('click', function(){
   overlay.classList.remove('is-active');
 })
 
+sitemapBtn.addEventListener('click', function(){
+  sitemapBox.classList.toggle('is-active');
+})
+
+sitemapBox.addEventListener('click', function(){
+  sitemapBox.classList.remove('is-active');
+})
 

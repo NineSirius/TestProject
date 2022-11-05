@@ -24,6 +24,18 @@
     border-radius: 15px;
     padding: 20px;
 
+    .modal-title-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-link {
+      font-weight: 600;
+      font-size: 1;
+      color: #fff;
+    }
+
     .modal-title {
       font-size: 2.5rem;
       margin: 10px 0 25px;
@@ -92,4 +104,53 @@
 
 .black {
   background: #000 !important;
+}
+
+.sitemap-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(500%);
+  transition: .2s;
+  background: rgba(#000, 0.5);
+
+  &.is-active {
+    transform: translateY(0);
+  }
+
+  .sitemap {
+    background: #2E2B2C;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &-title-wrap {
+      text-align: center;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .sitemap-link {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fff;
+
+
+        &.active {
+          color: #72A479;
+        }
+      }
+    }
+  }
 }
